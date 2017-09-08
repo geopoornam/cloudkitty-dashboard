@@ -12,7 +12,9 @@ opyright 2015 Objectif Libre
 #    License for the specific language governing permissions and limitations
 #    under the License.
 
-from decimal import *
+#from decimal import *
+import decimal
+from django.utils.translation import ugettext_lazy as _
 import json
 
 from django import http
