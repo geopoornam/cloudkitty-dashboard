@@ -71,7 +71,10 @@ class IndexView(views.APIView):
              if isinstance(start_period_cloud, unicode):
                  start_period_cloud = datetime.datetime.strptime(start_period_cloud, '%Y-%m-%d %H:%M:%S')
              else:
-                 start_period_cloud = datetime.datetime.now - dateutil.relativedelta.relativedelta(months=1)        
+                 start_period_cloud = datetime.datetime.now() - dateutil.relativedelta.relativedelta(months=1)
+        else:
+            start_period_cloud = datetime.datetime.now() - dateutil.relativedelta.relativedelta(months=1)
+                
         try:
             self.tenant_timezone = tenant_timezone
             now = datetime.datetime.now(pytz.timezone(self.tenant_timezone))
