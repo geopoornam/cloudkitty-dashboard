@@ -1,4 +1,4 @@
-opyright 2015 Objectif Libre
+# copyright 2015 Objectif Libre
 #
 #    Licensed under the Apache License, Version 2.0 (the "License"); you may
 #    not use this file except in compliance with the License. You may obtain
